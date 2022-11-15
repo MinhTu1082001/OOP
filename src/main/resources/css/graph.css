@@ -1,0 +1,107 @@
+.graph {
+  --fx-background-color: red;
+}
+
+.vertex {
+  --fx-background-color: transparent;
+  -fx-stroke-width: 3;
+  -fx-stroke: #333;
+  -fx-stroke-type: inside;
+  -fx-fill: #eee;
+  -fx-cursor: hand;
+}
+
+.vertex-label {
+  -fx-font: bold 8pt "sans-serif";
+  -fx-fill: #333;
+  -fx-font-weight: bold;
+}
+
+.edge {
+  -fx-stroke-width: 3;
+  -fx-stroke: #333;  
+  -fx-fill: transparent; /*important for curved edges */
+  -fx-stroke-line-cap: round;
+  -fx-opacity: 0.8;
+}
+
+.edge:hover {
+  -fx-cursor: hand;
+}
+
+.edge-label {
+  -fx-font: normal 9pt "sans-serif";
+  -fx-fill: #333;
+}
+
+.arrow {
+  -fx-stroke-width: 2.5;
+  -fx-stroke: #333;  
+  -fx-opacity: 0.8;
+}
+
+
+.vertex-selected {
+  -fx-stroke: #4be60e;
+  -fx-fill: #eee;
+}
+
+.edge-selected, .arrow-selected {
+  -fx-stroke: #ecec24;
+  -fx-stroke-dash-array: 2 5 2 5;
+}
+
+.edge-label-selected {
+  -fx-fill: #ecec24;
+}
+
+.vertex-unqueued {
+  -fx-fill: #eee;
+  -fx-stroke: #ccc;
+}
+
+.vertex-highlighted {
+  -fx-fill: #4be60e;
+  -fx-stroke: #4be60e;
+  -fx-scale-x: 1.1;
+  -fx-scale-y: 1.1;
+  -fx-scale-z: 1.1;
+}
+
+.vertex-traversed {
+  -fx-fill: #eee;
+  -fx-stroke: #ff8a27;
+}
+
+.edge-unqueued {
+  -fx-stroke: #ccc;
+}
+
+.edge-highlighted, .arrow-highlighted {
+  -fx-stroke: #4be60e;
+  -fx-stroke-width: 4;
+}
+
+.edge-traversed, .arrow-traversed {
+  -fx-stroke: #ff8a27;
+}
+
+.edge-label-highlighted {
+  -fx-fill: #4be60e;
+}
+
+.vertex-label-traversed, .edge-label-traversed {
+  -fx-fill: #ff8a27;
+}
+
+.vertex-label-unqueued, .edge-label-unqueued {
+  -fx-fill: #ccc;
+}
+
+.arrow-unqueued {
+  -fx-stroke: #ccc;
+}
+
+.vertex-label-highlighted {
+  -fx-fill: #fff !important;
+}
